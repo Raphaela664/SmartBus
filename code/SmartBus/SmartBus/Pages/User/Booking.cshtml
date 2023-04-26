@@ -1,0 +1,95 @@
+﻿@page
+@model SmartBus.Pages.User.BookingModel
+@{
+}
+@*<div class="container">
+    <h3 class="text-dark mb-3">Route details</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Route ID</th>
+                <th>Origin</th>
+                <th>Destination</th>
+                <th>Bus Id</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var route in Model.RouteInfoList)
+            {
+                <tr>
+                    <td>@route.routeId</td>
+                    <td>@route.origin</td>
+                    <td>@route.destination</td>
+                    <td>@route.busId</td>
+                    <td>@route.price</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>*@
+
+<br />
+<h2>Book Bus Ticket</h2>
+
+@if (Model.errorMessage.Length > 0)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>@Model.errorMessage</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+    </div>
+}
+<form method="POST">
+
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">RouteId</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="routeId" value="@Model.Trip.RouteId" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">User Id</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="regId" value="@Model.Trip.regId" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Departure Date</label>
+        <div class="col-sm-6">
+            <input type="date" class="form-control" name="departdate" value="@Model.Trip.departdate" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Departure Time</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="departtime" value="@Model.Trip.departtime" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Seat No</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="seatno" value="@Model.Trip.SeatNo" />
+        </div>
+    </div>
+
+    @if (Model.successMessage.Length > 0)
+    {
+        <div class="row mb-3">
+            <div class="col-sm-9">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>@Model.successMessage</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/MedicalRecords/Index" role="button">Cancel</a>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,73 @@
+﻿@page
+@model SmartBus.Pages.Admin.RouteDetailModel
+@{
+    ViewData["Title"] = "Route Details";
+}
+<h1>@ViewData["Title"]</h1>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">@Model.ErrorMessage</div>
+}
+
+@if (!string.IsNullOrEmpty(Model.SuccessMessage))
+{
+    <div class="alert alert-success">@Model.SuccessMessage</div>
+}
+
+<form method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Route ID</th>
+                <th>Origin</th>
+                <th>Destination</th>
+                <th>Bus ID</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="RouteId" name="RouteId" value="@Model.RouteId" />
+                        <span asp-validation-for="RouteId" class="text-danger"></span>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="Origin" name="Origin" value="@Model.Origin" />
+                        <span asp-validation-for="Origin" class="text-danger"></span>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="Destination" name="Destination" value="@Model.Destination" />
+                        <span asp-validation-for="Destination" class="text-danger"></span>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="BusId" name="BusId" value="@Model.BusId" />
+                        <span asp-validation-for="BusId" class="text-danger"></span>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="Price" name="Price" value="@Model.Price" />
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" name="addRoute">Add Route</button>
+                        <button type="submit" class="btn btn-primary" name="updateRoute">Update Route</button>
+                        <button type="submit" class="btn btn-danger" name="deleteRoute">Delete Route</button>
+                        <button type="submit" class="btn btn-primary" name="searchRoute">Search Route</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>

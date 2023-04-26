@@ -1,0 +1,32 @@
+﻿@page
+@model SmartBus.Pages.Admin.ManageBusModel
+@{
+}
+
+<div class="container">
+    <h3 class="text-dark mb-3">Registered Buses</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Bus Id</th>
+                <th>Bus Name</th>
+                <th>Total seats</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var bus in Model.busInfosList)
+            {
+                <tr>
+                    <td>@bus.BusId</td>
+                    <td>@bus.BusName</td>
+                    <td>@bus.TotalSeats</td>
+                    <td>
+                        <a href="/Admin/UpdateBus?id=@bus.BusId" class="btn btn-warning">Edit</a>
+                        <a href="/Admin/DeleteBus?id=@bus.BusId" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

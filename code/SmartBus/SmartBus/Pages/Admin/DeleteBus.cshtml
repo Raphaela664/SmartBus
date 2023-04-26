@@ -1,0 +1,31 @@
+﻿@page
+@using Microsoft.Data.SqlClient;
+@{
+
+    String id = Request.Query["id"];
+
+    try
+    {
+        String connectionString = "Data Source=Raphaela\\SQLEXPRESS;Initial Catalog=SmartBusDB;Integrated Security=True;TrustServerCertificate = True";
+        using (SqlConnection con = new SqlConnection(connectionString))
+        {
+            con.Open();
+
+            String sqlQuery = "DELETE FROM BusMaster WHERE BusId=@BusId";
+            using (SqlCommand cmd = new SqlCommand(sqlQuery, con))
+            {
+                cmd.Parameters.AddWithValue("@BusId", id);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+                if (rowsAffected >= 1)
+                {
+                    Response.Redirect("/Admin/ManageBus/");
+                }
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        return;
+    }
+}

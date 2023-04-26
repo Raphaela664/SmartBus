@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SmartBus
+build_property.RootNamespace = SmartBus
+build_property.ProjectDir = C:\Users\admin\source\repos\SmartBus\SmartBus\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\admin\source\repos\SmartBus\SmartBus
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Admin/DeleteBus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGVsZXRlQnVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Admin/ManageBus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTWFuYWdlQnVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Admin/RegisterBus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUmVnaXN0ZXJCdXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Admin/RegisterRoute.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUmVnaXN0ZXJSb3V0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Admin/RouteDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUm91dGVEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Admin/UpdateBus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXBkYXRlQnVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Shared/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Shared/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXEluZGV4MS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Shared/Layout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXExheW91dDEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/User/Booking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxCb29raW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-03m83ib005
+
+[C:/Users/admin/source/repos/SmartBus/SmartBus/Pages/Shared/_Layout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-6apefplt9y
